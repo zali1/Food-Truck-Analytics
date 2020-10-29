@@ -1,1 +1,2 @@
 # Food-Truck-Analytics
+This web app has been created for a local food truck business as an aid in analyzing business profits, sales, and trends. Metrics are displayed to help visualize daily/weekly sales and to easily calculate the net profit each day. The main goal of this tool is to give the business owner a more efficient way to calculate revenue and to provide an interpretable breakdown of earnings.
