@@ -1,0 +1,90 @@
+body {
+  font-family: Optima, sans-serif;
+  text-align: center;
+}
+
+.nav-container {
+  width: 100%;
+  margin: 0 auto;
+}
+header {
+  background: #A9A9A9;
+}
+
+header::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.logo {
+  float: center;
+  width: 15%;
+  height: 15%;
+  margin-top: 10px;
+}
+.navbar {
+  float: center;
+  padding: 10px 0;
+}
+
+nav ul {
+  margin: 10;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 50px;
+  padding-top: 10px;
+  position: relative;
+}
+
+nav a {
+  color: #444;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+nav a::before {
+  content: "";
+  display: block;
+  height: 10px;
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+
+.wrapper {
+  max-width: 800px;
+  margin: 50px auto;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr;
+  grid-template-rows: 0.5fr 0.5fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "top-left top-right"
+    "bottom-left bottom-right";
+}
+.bottom-left {
+  grid-area: bottom-left;
+}
+.top-left {
+  grid-area: top-left;
+}
+.top-right {
+  grid-area: top-right;
+}
+.bottom-right {
+  grid-area: bottom-right;
+}

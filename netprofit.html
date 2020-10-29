@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculations</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <header>
+    <div class="nav-container">
+
+      <img src= "Food-Truck-Metrics/truck-logo.png" alt="logo" class="logo">
+          <h1 class="navbar"></h1>
+          <nav>
+            <ul>
+              <li><a href="index.html">Metrics</a></li>
+              <li><a href="netprofit.html">Calculations</a></li>
+            </ul>
+          </nav>
+        </div>
+  </header>
+
+<h1 style= "color:blue">Daily Net Profit Calculator</h1>
+<p style= "color:blue">August 2020</p>
+<p>Input date in mm/dd/yy format (ex: 1/2/1998  or 12/5/2020) to view a breakdown of food revenue on your chosen date</p>
+<input type="text" id="date">
+<button id="submitButton" onclick="calculate()">Submit</button>
+
+
+<div class="grid-container">
+<div class="top-left">
+<div class="chart" style="position: relative; height:45vh; width:45vw">
+    <canvas id="pieChart" style="display: none;"></canvas>
+</div>
+</div>
+
+<div class="top-right">
+  <h2 id ="net" style="color:grey"></h2>
+  <h2 id ="mostsells" style="color:grey"></h2>
+  <h2 id ="mostprofit" style="color:grey"></h2>
+</div>
+</div>
+<script src="dailysales.js"></script>
+
+</body>
+</html>
